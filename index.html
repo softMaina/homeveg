@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-navy">
+        <div class="container">
+            <ul class="nav nav-pills nav-white">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SIGN IN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SIGN UP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us | Call us 012-3847961</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- landing page -->
+    <section class="landing">
+        <div class="row overlay">
+            <div class="container headlines">
+                <h2 class="headline">Get Fresh Vegetables & Meat Boxes Delivered to Your Door Step Every Week
+                </h2>
+                <h3 class="subtitle">Free Delivery within Klang Valley</h3>
+                <button class="btn btn-success order_button">Place an Order</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of landing page -->
+
+    <!-- steps section -->
+    <section class="row steps">
+        <div class="col-md-6">
+            <i></i>
+        </div>
+        <div class="col-md-6" id="steps">
+            <div id="steps_flow">
+                <h3>How Vegebox Work</h3>
+                <button class="btn btn-success order_button">Place an Order</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of steps section -->
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Features</h3>
+                    <p class="text-center">Loren ipsum</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>We buy at fresh market</h4>
+                    <p>Write some description</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Provide you actual bills</h4>
+                    <p>Write some description</p>
+                </div>
+                <div class="col-md-4">
+                    relative <h4>Our service fees <block>RM5</block>only</h4>
+                    <p>Write some description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="step-one">
+        <div class="container">
+            <div>
+                <h2 class="text-center"><b>Step 1 -</b> Choose your subscription</h2>
+                <p class="text-center">Lorem alot here</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow p-3 mb-5 bg-white" style="width: 18rem; margin:10; border-radius: 3%;">
+                        <img class="card-img-top" src="./static/img/grocer.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">RM 5</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <div>
+                                <p>Qty<input placeholder="2" /></p>
+                                <p>Time<input placeholder="time" /></p>
+                                <p>Frequency <input placeholder="select freequency" /></p>
+                            </div>
+                            <a href="#" class="btn btn-primary order_button">Select And Proceed to next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="step-two">
+        <div>
+            <h2 class="text-center"><b>Step 2 -</b>Enter your delivery address</h2>
+            <p class="text-center">Lorem alot here</p>
+        </div>
+        <div class="col-md-6" style="margin:auto;">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+
+                            <div class="form-group">
+                                <div id="googleMap" style="width:100%;height:400px;"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary order_button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer bg-navy">
+        <p class="text-center" style="margin-top: 30px;">&copy; 2019 Vegebox. All Rights Reserved</p>
+    </section>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_a2HlR9UW1hYskAIdUuaWcsUhJbNjkiY&callback=myMap"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
